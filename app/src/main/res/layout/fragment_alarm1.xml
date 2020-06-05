@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".Alarm1Fragment">
+
+
+    <TimePicker
+        android:theme="@style/darkTheme"
+        android:outlineSpotShadowColor="?attr/Text_Color"
+        android:numbersBackgroundColor="?attr/backgroundColor"
+        android:numbersInnerTextColor="?attr/Text_Color"
+        android:numbersSelectorColor="?attr/card_background"
+        android:numbersTextColor="?attr/Text_Color"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule a JOB"
+        android:onClick="scheduleJOB"
+        android:id="@+id/tp"
+        tools:ignore="OnClick" />
+    <Button
+        android:textColor="?attr/Text_Color"
+        android:background="?attr/Button_Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stop Alarm"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/btn_stop_alarm"
+        android:layout_below="@+id/tp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:textColor="?attr/Text_Color"
+        android:background="?attr/Button_Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set Alarm"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/btn_start_alarm"
+        android:layout_below="@+id/tp"
+        android:layout_alignRight="@+id/tp"
+        android:layout_alignEnd="@+id/tp"/>
+    <TextView
+        android:textColor="?attr/Text_Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hora local"
+        android:id="@+id/update_text"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_start_alarm"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

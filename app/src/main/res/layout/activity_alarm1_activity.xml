@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".Alarm1_activity">
+
+    <TimePicker
+
+        android:id="@+id/tp"
+        style="@android:style/Widget.Material.Light.TimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/backgroundColor"
+        android:backgroundTint="?attr/backgroundColor"
+        android:backgroundTintMode="?attr/backgroundColor"
+        android:headerBackground="?attr/Button_Color"
+
+
+        android:numbersBackgroundColor="?attr/Button_Color"
+        android:numbersInnerTextColor="?attr/Text_Color"
+        android:numbersSelectorColor="?attr/backgroundColor"
+        android:numbersTextColor="?attr/Text_Color"
+        android:onClick="scheduleJOB"
+
+        android:text="Schedule a JOB"
+        tools:ignore="OnClick" />
+    <Button
+        android:textColor="?attr/Text_Color"
+        android:background="?attr/Button_Color"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stop Alarm"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/btn_stop_alarm"
+        android:layout_below="@+id/tp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:textColor="?attr/Text_Color"
+        android:background="?attr/Button_Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set Alarm"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/btn_start_alarm"
+        android:layout_below="@+id/tp"
+        android:layout_alignRight="@+id/tp"
+        android:layout_alignEnd="@+id/tp"/>
+
+    <TextView
+        android:id="@+id/update_text"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_alarm"
+        android:layout_marginTop="10dp"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/txt_alarm1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_alarm"
+        android:layout_marginTop="12dp"
+        android:hint="Nombre de la alarma"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+</RelativeLayout>

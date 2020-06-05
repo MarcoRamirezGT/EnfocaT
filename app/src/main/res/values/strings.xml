@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EnfocaT</string>
+
+    <!-- NoteDown this Strings-->
+
+    <string name="Setting">Setting</string>
+    <string name="Dark">Dark Mode</string>
+    <string name="Launch">Save</string>
+    <string name="Second_Activity">Welcome to activity 2</string>
+    <string name="Text1">Settings</string>
+    <string name="Text2">Have a look of this applicattion designed\n for you yhe dark mode on one click by you</string>
+</resources>
