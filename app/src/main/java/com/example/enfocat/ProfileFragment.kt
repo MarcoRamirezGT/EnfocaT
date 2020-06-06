@@ -20,14 +20,13 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val vv = inflater.inflate(R.layout.fragment_profile, fragmentContainer, false)
-        val btn= vv.findViewById<View>(R.id.btn_settings) as Button
+        val btnSettings= vv.findViewById<View>(R.id.btn_settings) as Button
 
-        btn.setOnClickListener{
+        btnSettings.setOnClickListener{
             val intent = Intent(this@ProfileFragment.context,settings::class.java)
             startActivity(intent)
 
         }
-
 
 
         return vv
