@@ -8,7 +8,12 @@
 
     <ScrollView
         android:layout_width="368dp"
-        android:layout_height="495dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,179 +27,179 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:textColor="?attr/Text_Color"
                 android:padding="10dp"
                 android:text="Alarmas"
+                android:textColor="?attr/Text_Color"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_alarm1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="Alarma 1" />
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 1"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
 
             <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
                 android:id="@+id/btn_alarm"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 2" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 2"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm2"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 3" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 3"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm3"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 4" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 4"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm4"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 5" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 5"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm5"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 6" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 6"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm6"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 7" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 7"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm7"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 8" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 8"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm8"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 9" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 9"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm9"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 10" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 10"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm10"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 11" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 11"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm11"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 12" />
-
-            <Button
-                android:background="?attr/Button_Color"
-                android:textColor="?attr/Text_Color"
-                android:textStyle="bold"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 12"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_alarm12"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:text="Alarma 13" />
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="?attr/Button_Color"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Alarma 13"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
