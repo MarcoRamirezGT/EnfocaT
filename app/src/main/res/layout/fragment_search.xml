@@ -31,6 +31,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/type_here"
@@ -46,6 +47,7 @@
         android:layout_width="153dp"
         android:layout_height="47dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
         android:text="@string/search"
@@ -56,8 +58,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="393dp"
-        android:layout_height="459dp"
+        android:layout_width="392dp"
+        android:layout_height="625dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
@@ -65,14 +67,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
-            
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/button4"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
