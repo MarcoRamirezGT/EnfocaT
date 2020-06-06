@@ -12,8 +12,8 @@
        />
     <item
         android:id="@+id/search"
-        android:icon="@drawable/search"
-        android:title="Search"
+        android:icon="@drawable/university"
+        android:title="Quizzes"
         />
     <item
         android:id="@+id/profile"
