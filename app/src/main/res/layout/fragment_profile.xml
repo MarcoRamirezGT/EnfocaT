@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/graylight"
     android:orientation="vertical"
     tools:context=".ProfileFragment">
@@ -12,11 +12,14 @@
 
         android:id="@+id/head"
         android:layout_width="437dp"
-        android:layout_height="147dp"
+        android:layout_height="wrap_content"
         android:background="?attr/Button_Color"
+        app:layout_constraintBottom_toTopOf="@+id/info"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39">
 
 
         <ImageView
@@ -40,144 +43,216 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="186dp"
             android:layout_marginEnd="192dp"
-            android:text="User"
+            android:text="@string/user"
             android:textColor="?attr/Text_Color"
             android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/info"
-        android:layout_width="410dp"
-        android:layout_height="526dp"
+        android:layout_width="388dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
         android:background="?attr/backgroundColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/head"
-        app:layout_constraintVertical_bias="0">
+        app:layout_constraintTop_toBottomOf="@+id/head">
 
-        <ScrollView
-            android:background="?attr/backgroundColor"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
-                android:layout_gravity="fill">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="25dp">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/ic_email_black_24dp" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:textColor="?attr/Text_Color"
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_email_black_24dp" />
 
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:text="user@gmail.com"
-                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:paddingLeft="25dp">
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/user_gmail_com"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
 
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@drawable/ic_smartphone_black_24dp" />
+        </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textColor="?attr/Text_Color"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:paddingLeft="20dp"
-                        android:text="12121232"
-                        android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_smartphone_black_24dp" />
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:paddingLeft="25dp">
-
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@drawable/ic_grade_black_24dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textColor="?attr/Text_Color"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:paddingLeft="20dp"
-                        android:text="Student"
-                        android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="12121232"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
 
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:paddingLeft="25dp">
+        </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@drawable/ic_forum_black_24dp" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:textColor="?attr/Text_Color"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:paddingLeft="20dp"
-                        android:text="Comments"
-                        android:textStyle="bold" />
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_grade_black_24dp" />
 
-
-                </LinearLayout>
-
-                <Button
-
-                    android:id="@+id/btn_settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="50dp"
-                    android:background="?attr/Button_Color"
-                    android:text="Settings"
-                    android:textColor="?attr/Text_Color" />
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Student"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
 
 
-        </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_signUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_forum_black_24dp"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/comments"
+                android:textColor="?attr/Text_Color"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="16dp"
+            android:background="?attr/Button_Color"
+            android:text="@string/settings"
+            android:textColor="?attr/Text_Color"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_signUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_signUp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+
+            android:id="@+id/btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/Button_Color"
+            android:text="@string/sign_up"
+            android:textColor="?attr/Text_Color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_settings"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toEndOf="@+id/btn_logIn"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <Button
+
+            android:id="@+id/btn_logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginStart="16dp"
+            android:background="?attr/Button_Color"
+            android:text="@string/log_in"
+            android:textColor="?attr/Text_Color"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_signUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_signUp" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
