@@ -9,4 +9,7 @@
     <string name="Second_Activity">Welcome to activity 2</string>
     <string name="Text1">Settings</string>
     <string name="Text2">Have a look of this applicattion designed\n for you yhe dark mode on one click by you</string>
+    <string name="search">Search</string>
+    <string name="search_for_quizzes">Search for Quizzes</string>
+    <string name="type_here">Type here</string>
 </resources>
