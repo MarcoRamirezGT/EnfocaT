@@ -58,7 +58,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/info"
         android:layout_width="388dp"
-        android:layout_height="539dp"
+        android:layout_height="559dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="16dp"
@@ -184,8 +184,8 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_forum_black_24dp"
-                android:contentDescription="TODO" />
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_forum_black_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -202,24 +202,24 @@
         <Button
 
             android:id="@+id/btn_settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="81dp"
+            android:layout_height="39dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="104dp"
             android:background="?attr/Button_Color"
             android:text="@string/settings"
             android:textColor="?attr/Text_Color"
             app:layout_constraintBottom_toBottomOf="@+id/btn_signUp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btn_signUp"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
 
             android:id="@+id/btn_signUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="20dp"
@@ -231,15 +231,15 @@
             android:textColor="?attr/Text_Color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_settings"
-            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toEndOf="@+id/btn_logIn"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
         <Button
 
             android:id="@+id/btn_logIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="88dp"
+            android:layout_height="41dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
@@ -250,6 +250,17 @@
             app:layout_constraintBottom_toBottomOf="@+id/btn_signUp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btn_signUp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="81dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="48dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toEndOf="@+id/btn_settings" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

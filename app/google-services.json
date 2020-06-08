@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "268544963527",
+    "firebase_url": "https://enfocat-guate.firebaseio.com",
+    "project_id": "enfocat-guate",
+    "storage_bucket": "enfocat-guate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268544963527:android:9d4f2073fd96b3c7e9dfe2",
+        "android_client_info": {
+          "package_name": "com.example.enfocat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268544963527-82jvcris1n8p7admliej2mj5jo5mqlc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh83bmPlSkcwhtb6L8My9kF8qAVPEd9UU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268544963527-82jvcris1n8p7admliej2mj5jo5mqlc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
