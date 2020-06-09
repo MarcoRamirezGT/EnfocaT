@@ -16,9 +16,7 @@ import kotlinx.android.synthetic.main.fragment_profile.*
  * A simple [Fragment] subclass.
  */
 
-enum class ProviderType{
-    BASIC
-}
+
 class ProfileFragment : Fragment() {
 
 
@@ -31,18 +29,10 @@ class ProfileFragment : Fragment() {
         val vv = inflater.inflate(R.layout.fragment_profile, fragmentContainer, false)
         val btnSettings = vv.findViewById<View>(R.id.btn_settings) as Button
 
-
-
-
-
-
         btnSettings.setOnClickListener{
             val intent = Intent(this@ProfileFragment.context,settings::class.java)
             startActivity(intent)
 
-            val bundle = intent.extras
-            val email= bundle?.getString("email")
-            setup(email ?: "")
         }
         return vv}
 
@@ -51,23 +41,13 @@ class ProfileFragment : Fragment() {
 
 
     }
-    private fun setup(email: String) {
-        emailText.text = email
 
-        LogOutButton.setOnClickListener{
-            FirebaseAuth.getInstance().signOut()
-
-        }
 
 
 
 }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        btn_signUp.setOnClickListener{
-            findNavController().navigate(R.id.action_profileFragment_to_authentication)
-        }
-    }
-}
+
+
+
 

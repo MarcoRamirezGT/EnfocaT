@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_authentication.*
 
 class Authentication : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+ /**   override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_authentication)
 
@@ -41,7 +41,7 @@ class Authentication : AppCompatActivity() {
                         showProfile(it.result?.user?.email?:"", ProviderType.BASIC)
                     } else {
                         showAlert()
-                    }
+
 
                 }
             }
@@ -77,5 +77,5 @@ class Authentication : AppCompatActivity() {
             putExtra("provider", provider.name)
         }
         startActivity(profileIntent)
-    }
+    }**/
 }
