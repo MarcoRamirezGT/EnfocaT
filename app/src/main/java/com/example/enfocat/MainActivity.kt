@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.search->{
                 println("Search Pressed")
-                replaceFragment(SearchFragment())
+                replaceFragment(QuizzFragment())
                 return@OnNavigationItemSelectedListener  true
 
             }
