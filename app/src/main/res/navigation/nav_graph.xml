@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.enfocat.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_remindFragment"
+            app:destination="@id/remindFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarm1Fragment"
+        android:name="com.example.enfocat.Alarm1Fragment"
+        android:label="fragment_alarm1"
+        tools:layout="@layout/fragment_alarm1" >
+        <action
+            android:id="@+id/action_alarm1Fragment_to_remindFragment"
+            app:destination="@id/remindFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/remindFragment"
+        android:name="com.example.enfocat.RemindFragment"
+        android:label="fragment_remind"
+        tools:layout="@layout/fragment_remind" >
+        <action
+            android:id="@+id/action_remindFragment_to_alarm1Fragment"
+            app:destination="@id/alarm1Fragment" />
+        <action
+            android:id="@+id/action_remindFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.enfocat.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settings"
+            app:destination="@id/settings"
+            app:popUpTo="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_authentication"
+            app:destination="@id/authentication"
+            app:popUpTo="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.enfocat.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <activity
+        android:id="@+id/settings"
+        android:name="com.example.enfocat.settings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <activity
+        android:id="@+id/authentication"
+        android:name="com.example.enfocat.Authentication"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" />
+</navigation>

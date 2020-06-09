@@ -39,4 +39,8 @@
         <item name="android:windowExitAnimation">@android:anim/fade_in</item>
     </style>
 
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground"></item>
+        </style>
+    
 </resources>
