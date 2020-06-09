@@ -63,9 +63,9 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.enfocat.SearchFragment"
+        android:name="com.example.enfocat.QuizzFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_quizz" />
     <activity
         android:id="@+id/settings"
         android:name="com.example.enfocat.settings"
