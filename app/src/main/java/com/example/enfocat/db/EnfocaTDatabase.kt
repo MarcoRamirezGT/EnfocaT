@@ -5,9 +5,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [User::class], version = 1)
+@Database(entities = [Question::class], version = 1)
 abstract class EnfocaTDatabase : RoomDatabase(){
-    abstract  val userDAO: UserDAO
+    abstract  val questionDAO: QuestionDAO
 
     companion object{
         @Volatile
